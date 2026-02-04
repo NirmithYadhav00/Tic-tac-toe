@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - vs AI</title>
+    <link rel="stylesheet" href="tac.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Title -->
+        <h1 class="title">Tic Tac Toe</h1>
+        
+        <!-- Game Mode Selection -->
+        <div class="mode-selection">
+            <button class="mode-btn active" data-mode="ai">vs AI</button>
+            <button class="mode-btn" data-mode="2player">2 Players</button>
+        </div>
+
+        <!-- Difficulty Selection (only for AI mode) -->
+        <div class="difficulty-selection show">
+            <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn active" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <!-- Score Board -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <div class="score-label" id="player1Label">You (X)</div>
+                <div class="score-value" id="scoreX">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Draws</div>
+                <div class="score-value" id="scoreDraw">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label" id="player2Label">AI (O)</div>
+                <div class="score-value" id="scoreO">0</div>
+            </div>
+        </div>
+        
+        <!-- Game Status Display -->
+        <div class="status" id="gameStatus">Your Turn</div>
+        
+        <!-- 3x3 Game Board -->
+        <div class="board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <!-- Reset Button -->
+        <button class="reset-btn" id="resetBtn">New Game</button>
+    </div>
+    
+    <!-- Link to JavaScript file -->
+    <script src="toe.js"></script>
+</body>
+</html>
